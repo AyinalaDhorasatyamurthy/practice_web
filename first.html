@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First HTML Page</title>
+    </head>
+    <body>
+        <h1>First HTML Page</h1>
+        <p>This is my first HTML page.</p>
+
+        <input type="text" id="name" >
+        <button onclick="showname()" > submit</button>  
+
+        <button id="btn">click</button>
+
+        <p id="result"></p> 
+
+        <script>
+            function showname() {
+                let val = document.getElementById("name").value;
+                document.getElementById("result").innerHTML = "Hello " + val;
+            }
+
+            document.getElementById("btn").addEventListener("click", function() {
+                alert("Button clicked!");
+            });
+        </script>
+
+
+    </body>
+</html>
