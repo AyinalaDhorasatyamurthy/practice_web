@@ -10,6 +10,11 @@ app.get('/', function (req, res) {
     
 });
 
+app.get('/greet', function (req, res) {
+    res.send("welcome to express js");  
+});
+
+
 app.get('/time',function(req,res){
     var time = new Date().toLocaleTimeString();
     res.send(`Time is : ${time}`);
